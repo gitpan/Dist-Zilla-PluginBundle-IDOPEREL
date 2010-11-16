@@ -9,6 +9,6 @@ README
 dist.ini
 lib/Dist/Zilla/PluginBundle/IDOPEREL.pm
 t/00-load.t
-t/manifest.t
+t/release-dist-manifest.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t

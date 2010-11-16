@@ -3,7 +3,7 @@ NAME
     Dist::Zilla.
 
 VERSION
-    version 0.1
+    version 0.2
 
 SYNOPSIS
     In your dist.ini file:
@@ -39,12 +39,15 @@ DESCRIPTION
             [Manifest]
             [ConfirmRelease]
             [UploadToCPAN]
-            [AutoPrereq]
+            [AutoPrereqs]
             [@Git]
             [NextRelease]
             [GithubMeta]
             [ReadmeFromPod]
             [TestRelease]
+            [LoadTests]
+            [CheckChangesHasContent]
+            [DistManifestTests]
 
 INTERNAL METHODS
   bundle_config

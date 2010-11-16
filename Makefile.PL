@@ -22,8 +22,11 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Dist::Zilla::PluginBundle::IDOPEREL',
   'PREREQ_PM' => {
-    'Dist::Zilla::Plugin::AutoPrereq' => '0',
+    'Dist::Zilla::Plugin::AutoPrereqs' => '0',
+    'Dist::Zilla::Plugin::CheckChangesHasContent' => '0',
+    'Dist::Zilla::Plugin::DistManifestTests' => '0',
     'Dist::Zilla::Plugin::GithubMeta' => '0',
+    'Dist::Zilla::Plugin::LoadTests' => '0',
     'Dist::Zilla::Plugin::MetaJSON' => '0',
     'Dist::Zilla::Plugin::MinimumPerl' => '0',
     'Dist::Zilla::Plugin::NextRelease' => '0',
@@ -37,7 +40,7 @@ my %WriteMakefileArgs = (
     'Moose::Autobox' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.1',
+  'VERSION' => '0.2',
   'test' => {
     'TESTS' => 't/*.t'
   }

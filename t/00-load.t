@@ -1,10 +1,13 @@
-#!perl -T
+#!perl
 
-use Test::More tests => 1;
+use strict;
+use warnings;
 
-BEGIN {
-    use_ok( 'Dist::Zilla::PluginBundle::IDOPEREL' ) || print "Bail out!
-";
-}
+use Test::More;
 
-diag( "Testing Dist::Zilla::PluginBundle::IDOPEREL $Dist::Zilla::PluginBundle::IDOPEREL::VERSION, Perl $], $^X" );
+
+
+plan tests => 1;
+
+use_ok('Dist::Zilla::PluginBundle::IDOPEREL');
+diag("Testing Dist::Zilla::PluginBundle::IDOPEREL $Dist::Zilla::PluginBundle::IDOPEREL::VERSION, Perl $], $^X");

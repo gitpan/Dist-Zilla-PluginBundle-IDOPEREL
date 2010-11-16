@@ -1,4 +1,10 @@
 Revision history for Dist-Zilla-PluginBundle-IDOPEREL
 
+0.2       2010-11-16 12:46:38 Asia/Jerusalem
+	- Added Plugin::CheckChangesHasContent
+	- Added Plugin::LoadTests
+	- Added Plugin::DistManifestTests
+	- Replaced deprecated Plugin::AutoPrereq with Plugin::AutoPrereqs
+
 0.1       2010-08-18 13:40:47 Asia/Jerusalem
 	- Initial release
