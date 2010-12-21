@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::IDOPEREL;
 BEGIN {
-  $Dist::Zilla::PluginBundle::IDOPEREL::VERSION = '0.2';
+  $Dist::Zilla::PluginBundle::IDOPEREL::VERSION = '0.3';
 }
 
 use Moose;
@@ -20,7 +20,6 @@ use Dist::Zilla::Plugin::NextRelease;
 use Dist::Zilla::Plugin::GithubMeta;
 use Dist::Zilla::Plugin::TestRelease;
 use Dist::Zilla::Plugin::ReadmeFromPod;
-use Dist::Zilla::Plugin::LoadTests;
 use Dist::Zilla::Plugin::CheckChangesHasContent;
 use Dist::Zilla::Plugin::DistManifestTests;
 
@@ -30,7 +29,7 @@ Dist::Zilla::PluginBundle::IDOPEREL - IDOPEREL's plugin bundle for Dist::Zilla.
 
 =head1 VERSION
 
-version 0.2
+version 0.3
 
 =head1 SYNOPSIS
 
@@ -50,33 +49,16 @@ This bundle provides the following plugins and bundles:
 	-bundle = @Classic
 	-remove = Readme
 
-	[GatherDir]
-	[PruneCruft]
-	[ManifestSkip]
-	[MetaYAML]
-	[MetaJSON]
-	[License]
-	[PkgVersion]
-	[PodVersion]
-	[PodCoverageTests]
-	[PodSyntaxTests]
-	[ExtraTests]
-	[ExecDir]
-	[ShareDir]
-	[MakeMaker]
-	[MinimumPerl]
-	[Manifest]
-	[ConfirmRelease]
-	[UploadToCPAN]
 	[AutoPrereqs]
-	[@Git]
-	[NextRelease]
-	[GithubMeta]
-	[ReadmeFromPod]
-	[TestRelease]
-	[LoadTests]
 	[CheckChangesHasContent]
 	[DistManifestTests]
+	[@Git]
+	[GithubMeta]
+	[MetaJSON]
+	[MinimumPerl]
+	[NextRelease]
+	[ReadmeFromPod]
+	[TestRelease]
 
 =head1 INTERNAL METHODS
 
@@ -109,7 +91,6 @@ sub bundle_config {
 		[ MinimumPerl			=> {} ],
 		[ NextRelease			=> {} ],
 		[ ReadmeFromPod			=> {} ],
-		[ LoadTests			=> {} ],
 		[ CheckChangesHasContent	=> {} ],
 		[ DistManifestTests		=> {} ],
 		[ TestRelease			=> {} ],

@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.006; }
+BEGIN { require 5.004; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -26,7 +26,6 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::CheckChangesHasContent' => '0',
     'Dist::Zilla::Plugin::DistManifestTests' => '0',
     'Dist::Zilla::Plugin::GithubMeta' => '0',
-    'Dist::Zilla::Plugin::LoadTests' => '0',
     'Dist::Zilla::Plugin::MetaJSON' => '0',
     'Dist::Zilla::Plugin::MinimumPerl' => '0',
     'Dist::Zilla::Plugin::NextRelease' => '0',
@@ -40,7 +39,7 @@ my %WriteMakefileArgs = (
     'Moose::Autobox' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.2',
+  'VERSION' => '0.3',
   'test' => {
     'TESTS' => 't/*.t'
   }

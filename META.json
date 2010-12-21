@@ -25,7 +25,6 @@
             "Dist::Zilla::Plugin::CheckChangesHasContent" : 0,
             "Dist::Zilla::Plugin::DistManifestTests" : 0,
             "Dist::Zilla::Plugin::GithubMeta" : 0,
-            "Dist::Zilla::Plugin::LoadTests" : 0,
             "Dist::Zilla::Plugin::MetaJSON" : 0,
             "Dist::Zilla::Plugin::MinimumPerl" : 0,
             "Dist::Zilla::Plugin::NextRelease" : 0,
@@ -38,7 +37,7 @@
             "Moose" : 0,
             "Moose::Autobox" : 0,
             "namespace::autoclean" : 0,
-            "perl" : "5.006"
+            "perl" : "5.004"
          }
       },
       "test" : {
@@ -48,6 +47,14 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.2"
+   "resources" : {
+      "homepage" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL.git",
+         "web" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree"
+      }
+   },
+   "version" : "0.3"
 }
 
