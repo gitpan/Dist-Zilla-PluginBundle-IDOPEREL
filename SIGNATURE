@@ -1,0 +1,36 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+SHA1 bb0d4e2ea6b122c8f502c4275a8ec0253333fa29 Changes
+SHA1 4fd10efcea7157e7d9c3a45e000c91119dcad1f7 LICENSE
+SHA1 4e1242847818a3fadc7d5c268f37d749ec223ac1 MANIFEST
+SHA1 5de70049fc06b596eb6b7df81f1d9e4562188eab MANIFEST.SKIP
+SHA1 5da998f9ad656070500aedc61560b14aa550cdd2 META.json
+SHA1 80a94307851a860bdc95745686a6cee0a0135207 META.yml
+SHA1 1f321abed324c376d5315c1b011eb6f7408f0cc2 Makefile.PL
+SHA1 4f8e429c4c4d537f3361316fc2349f4ce922e9e5 README
+SHA1 e352548dc886e23b47dae42eadfd5bfbd4b6cadf dist.ini
+SHA1 b807a6c7827b2fc7642096045a9dce5dad3fbc3a lib/Dist/Zilla/PluginBundle/IDOPEREL.pm
+SHA1 87768d177f8c2e2df9c591cde869e7c8a245555e t/release-dist-manifest.t
+SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
+SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iF4EAREIAAYFAk1+dc0ACgkQa4OHQAFM10f/zgD+IFS1sCPuuyeseqO1kWs6M97G
+Wu/hi0GgDypDOxIAC7EA/i8+4Z2t5LNYdv/97PO3w5fqAF7swg+e1NYQ7tsjQGcH
+=EKz6
+-----END PGP SIGNATURE-----
