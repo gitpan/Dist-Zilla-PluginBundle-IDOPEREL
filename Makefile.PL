@@ -39,13 +39,12 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::PluginBundle::Classic' => '0',
     'Dist::Zilla::PluginBundle::Filter' => '0',
     'Dist::Zilla::PluginBundle::Git' => '0',
-    'Dist::Zilla::Role::PluginBundle' => '0',
+    'Dist::Zilla::Role::PluginBundle::Easy' => '0',
     'Moose' => '0',
-    'Moose::Autobox' => '0',
     'namespace::autoclean' => '0',
     'version' => '0.77'
   },
-  'VERSION' => 'v0.600.1',
+  'VERSION' => 'v0.600.2',
   'test' => {
     'TESTS' => 't/*.t'
   }
