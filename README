@@ -3,7 +3,7 @@ NAME
     Dist::Zilla.
 
 VERSION
-    version v0.600.0
+    version v0.600.1
 
 SYNOPSIS
     In your dist.ini file:
@@ -35,6 +35,9 @@ DESCRIPTION
             [TestRelease]
             [Signature]
             [VersionFromModule]
+
+            [Prereqs / ConfigureRequires]
+            version = 0.77
 
 INTERNAL METHODS
   bundle_config

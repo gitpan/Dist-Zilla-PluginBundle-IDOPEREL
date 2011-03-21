@@ -15,7 +15,8 @@ my %WriteMakefileArgs = (
     'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.31',
+    'version' => '0.77'
   },
   'DISTNAME' => 'Dist-Zilla-PluginBundle-IDOPEREL',
   'EXE_FILES' => [],
@@ -30,6 +31,7 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::MetaJSON' => '0',
     'Dist::Zilla::Plugin::MinimumPerl' => '0',
     'Dist::Zilla::Plugin::NextRelease' => '0',
+    'Dist::Zilla::Plugin::Prereqs' => '0',
     'Dist::Zilla::Plugin::ReadmeFromPod' => '0',
     'Dist::Zilla::Plugin::Signature' => '0',
     'Dist::Zilla::Plugin::TestRelease' => '0',
@@ -43,7 +45,7 @@ my %WriteMakefileArgs = (
     'namespace::autoclean' => '0',
     'version' => '0.77'
   },
-  'VERSION' => 'v0.600.0',
+  'VERSION' => 'v0.600.1',
   'test' => {
     'TESTS' => 't/*.t'
   }

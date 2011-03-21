@@ -6,6 +6,7 @@ build_requires:
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.31
+  version: 0.77
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.102160'
 license: perl
@@ -22,6 +23,7 @@ requires:
   Dist::Zilla::Plugin::MetaJSON: 0
   Dist::Zilla::Plugin::MinimumPerl: 0
   Dist::Zilla::Plugin::NextRelease: 0
+  Dist::Zilla::Plugin::Prereqs: 0
   Dist::Zilla::Plugin::ReadmeFromPod: 0
   Dist::Zilla::Plugin::Signature: 0
   Dist::Zilla::Plugin::TestRelease: 0
@@ -38,4 +40,4 @@ requires:
 resources:
   homepage: http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree
   repository: git://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL.git
-version: v0.600.0
+version: v0.600.1

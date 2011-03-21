@@ -16,7 +16,8 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.31",
+            "version" : "0.77"
          }
       },
       "runtime" : {
@@ -29,6 +30,7 @@
             "Dist::Zilla::Plugin::MetaJSON" : 0,
             "Dist::Zilla::Plugin::MinimumPerl" : 0,
             "Dist::Zilla::Plugin::NextRelease" : 0,
+            "Dist::Zilla::Plugin::Prereqs" : 0,
             "Dist::Zilla::Plugin::ReadmeFromPod" : 0,
             "Dist::Zilla::Plugin::Signature" : 0,
             "Dist::Zilla::Plugin::TestRelease" : 0,
@@ -59,6 +61,6 @@
          "web" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree"
       }
    },
-   "version" : "v0.600.0"
+   "version" : "v0.600.1"
 }
 
