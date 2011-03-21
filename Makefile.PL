@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.004; }
+BEGIN { require 5.006; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -26,21 +26,24 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::CheckChangesHasContent' => '0',
     'Dist::Zilla::Plugin::DistManifestTests' => '0',
     'Dist::Zilla::Plugin::GithubMeta' => '0',
+    'Dist::Zilla::Plugin::InstallGuide' => '0',
     'Dist::Zilla::Plugin::MetaJSON' => '0',
     'Dist::Zilla::Plugin::MinimumPerl' => '0',
     'Dist::Zilla::Plugin::NextRelease' => '0',
     'Dist::Zilla::Plugin::ReadmeFromPod' => '0',
     'Dist::Zilla::Plugin::Signature' => '0',
     'Dist::Zilla::Plugin::TestRelease' => '0',
+    'Dist::Zilla::Plugin::VersionFromModule' => '0',
     'Dist::Zilla::PluginBundle::Classic' => '0',
     'Dist::Zilla::PluginBundle::Filter' => '0',
     'Dist::Zilla::PluginBundle::Git' => '0',
     'Dist::Zilla::Role::PluginBundle' => '0',
     'Moose' => '0',
     'Moose::Autobox' => '0',
-    'namespace::autoclean' => '0'
+    'namespace::autoclean' => '0',
+    'version' => '0.77'
   },
-  'VERSION' => '0.5',
+  'VERSION' => 'v0.600.0',
   'test' => {
     'TESTS' => 't/*.t'
   }
