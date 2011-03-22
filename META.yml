@@ -41,4 +41,4 @@ requires:
 resources:
   homepage: http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree
   repository: git://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL.git
-version: v0.600.3
+version: v0.600.4

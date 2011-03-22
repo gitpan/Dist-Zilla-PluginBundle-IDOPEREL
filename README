@@ -3,7 +3,7 @@ NAME
     Dist::Zilla.
 
 VERSION
-    version v0.600.3
+    version v0.600.4
 
 SYNOPSIS
     In your dist.ini file:
