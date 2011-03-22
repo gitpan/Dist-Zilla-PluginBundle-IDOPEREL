@@ -6,6 +6,8 @@ BEGIN { require 5.006; }
 
 use ExtUtils::MakeMaker 6.31;
 
+use File::ShareDir::Install;
+install_share module => "Dist::Zilla::MintingProfile::IDOPEREL", "profiles";
 
 
 my %WriteMakefileArgs = (
@@ -16,6 +18,7 @@ my %WriteMakefileArgs = (
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31',
+    'File::ShareDir::Install' => '0.03',
     'version' => '0.77'
   },
   'DISTNAME' => 'Dist-Zilla-PluginBundle-IDOPEREL',
@@ -39,12 +42,13 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::PluginBundle::Classic' => '0',
     'Dist::Zilla::PluginBundle::Filter' => '0',
     'Dist::Zilla::PluginBundle::Git' => '0',
+    'Dist::Zilla::Role::MintingProfile::ShareDir' => '0',
     'Dist::Zilla::Role::PluginBundle::Easy' => '0',
     'Moose' => '0',
     'namespace::autoclean' => '0',
     'version' => '0.77'
   },
-  'VERSION' => 'v0.600.2',
+  'VERSION' => 'v0.600.3',
   'test' => {
     'TESTS' => 't/*.t'
   }
@@ -69,5 +73,8 @@ delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
 
 WriteMakefile(%WriteMakefileArgs);
 
+package
+MY;
+use File::ShareDir::Install qw(postamble);
 
 

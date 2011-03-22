@@ -9,7 +9,12 @@ Makefile.PL
 README
 SIGNATURE
 dist.ini
+lib/Dist/Zilla/MintingProfile/IDOPEREL.pm
 lib/Dist/Zilla/PluginBundle/IDOPEREL.pm
+profiles/default/Module.pm
+profiles/default/plugins.ini
+profiles/default/profile.ini
+profiles/default/skel/Changes
+profiles/default/skel/t/00-load.t
 t/release-dist-manifest.t
-t/release-pod-coverage.t
 t/release-pod-syntax.t

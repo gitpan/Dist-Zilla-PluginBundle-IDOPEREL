@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-IDOPEREL
 
+v0.600.3  2011-03-22 22:42:22 Asia/Jerusalem
+	- Created a default minting profile for usage with "dzil new"
+
 v0.600.2  2011-03-22 00:36:19 Asia/Jerusalem
 	- Using Role::PluginBundle::Easy
 	- Fixed: Plugin::PkgVersion wasn't properly removed from the bundle

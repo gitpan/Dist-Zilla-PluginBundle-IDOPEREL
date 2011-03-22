@@ -1,7 +1,7 @@
 package Dist::Zilla::PluginBundle::IDOPEREL;
 
 BEGIN {
-	use version 0.77; our $VERSION = version->declare("v0.600.2");
+	use version 0.77; our $VERSION = version->declare("v0.600.3");
 }
 
 use Moose;
@@ -34,7 +34,7 @@ Dist::Zilla::PluginBundle::IDOPEREL - IDOPEREL's plugin bundle for Dist::Zilla.
 
 =head1 VERSION
 
-version v0.600.2
+version v0.600.3
 
 =head1 SYNOPSIS
 
