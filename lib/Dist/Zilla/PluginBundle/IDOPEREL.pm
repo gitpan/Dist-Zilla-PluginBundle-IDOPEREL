@@ -7,7 +7,7 @@ use namespace::autoclean;
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-use version 0.77; our $VERSION = qv("v0.600.4");
+use version 0.77; our $VERSION = version->declare("v0.600.5");
 
 use Dist::Zilla::PluginBundle::Filter;
 use Dist::Zilla::PluginBundle::Classic;
@@ -32,7 +32,7 @@ Dist::Zilla::PluginBundle::IDOPEREL - IDOPEREL's plugin bundle for Dist::Zilla.
 
 =head1 VERSION
 
-version v0.600.4
+version v0.600.5
 
 =head1 SYNOPSIS
 
@@ -53,10 +53,18 @@ This bundle provides the following plugins and bundles:
 	-remove = Readme
 	-remove = PkgVersion
 
+	[@Git]
+	tag_format = %v
+	tag_message = %v
+
+	[VersionFromModule]
+
 	[AutoPrereqs]
+	[Prereqs / ConfigureRequires]
+	version = 0.77
+
 	[CheckChangesHasContent]
 	[DistManifestTests]
-	[@Git]
 	[GithubMeta]
 	[InstallGuide]
 	[MetaJSON]
@@ -65,10 +73,6 @@ This bundle provides the following plugins and bundles:
 	[ReadmeFromPod]
 	[TestRelease]
 	[Signature]
-	[VersionFromModule]
-
-	[Prereqs / ConfigureRequires]
-	version = 0.77
 
 =head1 INTERNAL METHODS
 
@@ -84,22 +88,28 @@ sub configure {
 		-remove => [qw/Readme PkgVersion/],
 	});
 
+	$self->add_bundle(Git => {
+		tag_format => '%v',
+		tag_message => '%v',
+	});
+
 	$self->add_plugins(
 		'VersionFromModule',
+
 		[ 'AutoPrereqs' => { skip => $self->payload->{auto_prereqs_skip} } ],
 		[ 'Prereqs' => 'version' => { -phase => 'configure', -type => 'requires', 'version' => 0.77 } ],
+
+		'CheckChangesHasContent',
+		'DistManifestTests',
+		'GithubMeta',
+		'InstallGuide',
 		'MetaJSON',
 		'MinimumPerl',
 		'NextRelease',
 		'ReadmeFromPod',
-		'InstallGuide',
-		'CheckChangesHasContent',
-		'DistManifestTests',
 		'TestRelease',
 		'Signature'
 	);
-
-	$self->add_bundle('Git');
 }
 
 __PACKAGE__->meta->make_immutable;

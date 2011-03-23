@@ -4,7 +4,7 @@
       "Ido Perlmuter <ido@ido50.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.102160",
+   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580",
    "license" : [
       "perl_5"
    ],
@@ -62,6 +62,6 @@
          "web" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree"
       }
    },
-   "version" : "v0.600.4"
+   "version" : "v0.600.5"
 }
 
