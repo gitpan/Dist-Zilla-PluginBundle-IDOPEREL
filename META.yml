@@ -7,7 +7,6 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.31
   File::ShareDir::Install: 0.03
-  version: 0.77
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580'
 license: perl
@@ -37,8 +36,7 @@ requires:
   Moose: 0
   namespace::autoclean: 0
   perl: 5.006
-  version: 0.77
 resources:
   homepage: http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree
   repository: git://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL.git
-version: v0.600.5
+version: 0.700

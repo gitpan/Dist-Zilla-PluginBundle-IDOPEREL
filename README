@@ -3,7 +3,7 @@ NAME
     Dist::Zilla.
 
 VERSION
-    version v0.600.5
+    version 0.700
 
 SYNOPSIS
     In your dist.ini file:
@@ -23,15 +23,9 @@ DESCRIPTION
             -remove = PkgVersion
 
             [@Git]
-            tag_format = %v
-            tag_message = %v
 
             [VersionFromModule]
-
             [AutoPrereqs]
-            [Prereqs / ConfigureRequires]
-            version = 0.77
-
             [CheckChangesHasContent]
             [DistManifestTests]
             [GithubMeta]

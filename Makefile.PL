@@ -18,8 +18,7 @@ my %WriteMakefileArgs = (
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31',
-    'File::ShareDir::Install' => '0.03',
-    'version' => '0.77'
+    'File::ShareDir::Install' => '0.03'
   },
   'DISTNAME' => 'Dist-Zilla-PluginBundle-IDOPEREL',
   'EXE_FILES' => [],
@@ -45,10 +44,9 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Role::MintingProfile::ShareDir' => '0',
     'Dist::Zilla::Role::PluginBundle::Easy' => '0',
     'Moose' => '0',
-    'namespace::autoclean' => '0',
-    'version' => '0.77'
+    'namespace::autoclean' => '0'
   },
-  'VERSION' => 'v0.600.5',
+  'VERSION' => '0.700',
   'test' => {
     'TESTS' => 't/*.t'
   }

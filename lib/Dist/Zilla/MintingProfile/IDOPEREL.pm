@@ -5,7 +5,8 @@ package Dist::Zilla::MintingProfile::IDOPEREL;
 use Moose;
 with 'Dist::Zilla::Role::MintingProfile::ShareDir';
 
-use version 0.77; our $VERSION = version->declare("v0.600.5");
+our $VERSION = "0.700";
+$VERSION = eval $VERSION;
 
 =head1 NAME
 
@@ -13,7 +14,7 @@ Dist::Zilla::MintingProfile::IDOPEREL - Wrapper for IDOPEREL's personal minting 
 
 =head1 VERSION
 
-version v0.600.5
+version 0.700
 
 =head1 AUTHOR
 

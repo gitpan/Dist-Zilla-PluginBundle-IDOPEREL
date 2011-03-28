@@ -17,8 +17,7 @@
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "6.31",
-            "File::ShareDir::Install" : "0.03",
-            "version" : "0.77"
+            "File::ShareDir::Install" : "0.03"
          }
       },
       "runtime" : {
@@ -43,8 +42,7 @@
             "Dist::Zilla::Role::PluginBundle::Easy" : 0,
             "Moose" : 0,
             "namespace::autoclean" : 0,
-            "perl" : "5.006",
-            "version" : "0.77"
+            "perl" : "5.006"
          }
       },
       "test" : {
@@ -62,6 +60,6 @@
          "web" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree"
       }
    },
-   "version" : "v0.600.5"
+   "version" : "0.700"
 }
 
