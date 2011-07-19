@@ -4,7 +4,7 @@
       "Ido Perlmuter <ido@ido50.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580",
+   "generated_by" : "Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110440",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +16,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31",
+            "ExtUtils::MakeMaker" : "6.30",
             "File::ShareDir::Install" : "0.03"
          }
       },
@@ -53,13 +53,13 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree",
+      "homepage" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL.git",
-         "web" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL/tree"
+         "url" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL",
+         "web" : "http://github.com/ido50/Dist-Zilla-PluginBundle-IDOPEREL"
       }
    },
-   "version" : "0.700"
+   "version" : "0.701"
 }
 

@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,18 +14,18 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-SHA1 9d60c011f86275a5c2873eaf8600787134252b18 Changes
+SHA1 04deda925664fc07d44b70fcd32adbae7cba43f8 Changes
 SHA1 813fe4d8c4ad8c738dceac23c3651aea4cf81b64 INSTALL
-SHA1 4fd10efcea7157e7d9c3a45e000c91119dcad1f7 LICENSE
+SHA1 0b9ba721d88fc4c004cfe7ebe970686db5c24784 LICENSE
 SHA1 76e7f2e04b62457de7c28683c95eb72226544e61 MANIFEST
-SHA1 303d0179e3ba196cbe0840170aaffab5348a4b06 MANIFEST.SKIP
-SHA1 ba21d2c2236a5eb5ede4f9176f6b854b3c41cbad META.json
-SHA1 7752b556944c4886537dd8c2b4ad89f73da386c1 META.yml
-SHA1 85085ba3888ca296b92815fc02eb2151a8acbdd7 Makefile.PL
-SHA1 82fa70bb03ddfce4620cf68cee0d47aa34dfc99b README
+SHA1 1f48f04ee95955772937b48085c25eb25d17ea0b MANIFEST.SKIP
+SHA1 db59114e505ea3890f4af154455e686e2c30a1ad META.json
+SHA1 a5c9bb63d8fbb30a147d0668de010a0796797148 META.yml
+SHA1 c78e4a81cdc167121f317f032cd504acfcda5478 Makefile.PL
+SHA1 2d9b59e0df8f88fdbff8ff350361fae185551676 README
 SHA1 30e181e26134014b52b0bcc174e01feeffa1aa58 dist.ini
-SHA1 6fa6786e47e6fa75cffc165d8b603fbd47e0afd5 lib/Dist/Zilla/MintingProfile/IDOPEREL.pm
-SHA1 f187a291112b13e75c2ae27264f39d547fe1fbf9 lib/Dist/Zilla/PluginBundle/IDOPEREL.pm
+SHA1 e02f0809df88bc8fc1a0d7ccabcdd6bea5645e5d lib/Dist/Zilla/MintingProfile/IDOPEREL.pm
+SHA1 22227d1e580161881d2297fac29848b619556539 lib/Dist/Zilla/PluginBundle/IDOPEREL.pm
 SHA1 52a7d3ea4455c7419e7ae809ada6afd573697df2 profiles/default/Module.pm
 SHA1 a98d82d84d72a6ab87f5835fd4909448033d2ef0 profiles/default/plugins.ini
 SHA1 480bd85566c485d3750d99add8c34c9e72460d31 profiles/default/profile.ini
@@ -37,7 +37,7 @@ SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iF4EAREIAAYFAk2Q0wQACgkQa4OHQAFM10dPmAD/ca/DJUCmRNoHgMauRp9g8o26
-Y/jG2R0fXPu865m/Og4A/RIp418VWI6KPwuMXpjvRt7pzLtb42xmZFsYjFHJmUvC
-=5pDU
+iF4EAREIAAYFAk4lxWsACgkQa4OHQAFM10cz/QD9G/dBxTTMIynQpjAyE6t4eqpY
+Smv/oAP8394FF8vYfjEA/2bs+SfWwWRYDpSzqjvY8WzVMhjG5OlA9oY2CCg9Dzr8
+=ArYl
 -----END PGP SIGNATURE-----
