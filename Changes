@@ -1,5 +1,9 @@
 Revision history for Dist-Zilla-PluginBundle-IDOPEREL
 
+1.000000  2014-02-26 19:47:28+02:00 Asia/Jerusalem
+	- Replaced GithubMeta with GitHub::Meta
+	- Small changes to the minting profile
+
 0.701     2011-07-19 20:56:57 Asia/Jerusalem
 	- Fixed bug with new version of Dist::Zilla::Plugin::AutoPrereqs causing it to fail
 

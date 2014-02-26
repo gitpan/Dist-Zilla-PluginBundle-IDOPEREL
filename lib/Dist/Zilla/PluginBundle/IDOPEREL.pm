@@ -7,11 +7,11 @@ use namespace::autoclean;
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = "0.701";
+our $VERSION = "1.000000";
 $VERSION = eval $VERSION;
 
 use Dist::Zilla::PluginBundle::Filter;
-use Dist::Zilla::PluginBundle::Classic;
+use Dist::Zilla::PluginBundle::Basic;
 use Dist::Zilla::PluginBundle::Git;
 use Dist::Zilla::Plugin::VersionFromModule;
 use Dist::Zilla::Plugin::MetaJSON;
@@ -19,21 +19,18 @@ use Dist::Zilla::Plugin::MinimumPerl;
 use Dist::Zilla::Plugin::AutoPrereqs;
 use Dist::Zilla::Plugin::Prereqs;
 use Dist::Zilla::Plugin::NextRelease;
-use Dist::Zilla::Plugin::GithubMeta;
+use Dist::Zilla::Plugin::GitHub::Meta;
 use Dist::Zilla::Plugin::TestRelease;
 use Dist::Zilla::Plugin::ReadmeFromPod;
 use Dist::Zilla::Plugin::InstallGuide;
 use Dist::Zilla::Plugin::CheckChangesHasContent;
-use Dist::Zilla::Plugin::DistManifestTests;
+use Dist::Zilla::Plugin::Test::DistManifest;
 use Dist::Zilla::Plugin::Signature;
+use Dist::Zilla::Plugin::Encoding;
 
 =head1 NAME
 
 Dist::Zilla::PluginBundle::IDOPEREL - IDOPEREL's plugin bundle for Dist::Zilla.
-
-=head1 VERSION
-
-version 0.701
 
 =head1 SYNOPSIS
 
@@ -50,7 +47,7 @@ to install and use it.
 This bundle provides the following plugins and bundles:
 
 	[@Filter]
-	-bundle = @Classic
+	-bundle = @Basic
 	-remove = Readme
 	-remove = PkgVersion
 
@@ -59,8 +56,8 @@ This bundle provides the following plugins and bundles:
 	[VersionFromModule]
 	[AutoPrereqs]
 	[CheckChangesHasContent]
-	[DistManifestTests]
-	[GithubMeta]
+	[Test::DistManifest]
+	[GitHub::Meta]
 	[InstallGuide]
 	[MetaJSON]
 	[MinimumPerl]
@@ -68,6 +65,10 @@ This bundle provides the following plugins and bundles:
 	[ReadmeFromPod]
 	[TestRelease]
 	[Signature]
+
+	[Encoding]
+	encoding = bytes
+	match = \.(jpg|png|gif|gz|zip)$
 
 =head1 INTERNAL METHODS
 
@@ -79,28 +80,34 @@ sub configure {
 	my $self = shift;
 
 	$self->add_bundle(Filter => {
-		-bundle => '@Classic',
-		-remove => [qw/Readme PkgVersion/],
+		-bundle => '@Basic',
+		-remove => [qw/Readme MetaYAML/],
 	});
 
 	$self->add_bundle('Git');
 
-	$self->add_plugins(
-		'VersionFromModule',
+	my @plugins = ('VersionFromModule');
+	if ($self->payload->{auto_prereqs_skip}) {
+		push(@plugins, ['AutoPrereqs' => { skip => $self->payload->{auto_prereqs_skip} }]);
+	} else {
+		push(@plugins, 'AutoPrereqs');
+	}
 
-		[ 'AutoPrereqs' => { skip => $self->payload->{auto_prereqs_skip} || [] } ],
-
+	push(@plugins,
 		'CheckChangesHasContent',
-		'DistManifestTests',
-		'GithubMeta',
+		'Test::DistManifest',
+		'GitHub::Meta',
 		'InstallGuide',
 		'MetaJSON',
 		'MinimumPerl',
 		'NextRelease',
 		'ReadmeFromPod',
 		'TestRelease',
-		'Signature'
+		'Signature',
+		[ 'Encoding' => { encoding => 'bytes', match => '\.(jpg|png|gif|gz|zip)$' } ]
 	);
+
+	$self->add_plugins(@plugins);
 }
 
 __PACKAGE__->meta->make_immutable;
@@ -144,7 +151,7 @@ L<http://search.cpan.org/dist/Dist-Zilla-PluginBundle-IDOPEREL/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2010-2011 Ido Perlmuter.
+Copyright 2010-2014 Ido Perlmuter.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
